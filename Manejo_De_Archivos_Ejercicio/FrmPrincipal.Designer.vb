@@ -23,32 +23,33 @@ Partial Class FrmPrincipal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         BtnCrear = New Button()
-        TextBox1 = New TextBox()
+        tbxAgregarInfo = New TextBox()
         BtnEliminar = New Button()
         BtnAgregar = New Button()
         BtnSobrescribir = New Button()
-        ListBox1 = New ListBox()
+        listaDatos = New ListBox()
+        lblTotalReg = New Label()
         SuspendLayout()
         ' 
         ' BtnCrear
         ' 
-        BtnCrear.Location = New Point(12, 303)
+        BtnCrear.Location = New Point(59, 315)
         BtnCrear.Name = "BtnCrear"
         BtnCrear.Size = New Size(82, 23)
         BtnCrear.TabIndex = 0
         BtnCrear.Text = "Crear txt"
         BtnCrear.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' tbxAgregarInfo
         ' 
-        TextBox1.Location = New Point(12, 40)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(282, 23)
-        TextBox1.TabIndex = 1
+        tbxAgregarInfo.Location = New Point(12, 40)
+        tbxAgregarInfo.Name = "tbxAgregarInfo"
+        tbxAgregarInfo.Size = New Size(282, 23)
+        tbxAgregarInfo.TabIndex = 1
         ' 
         ' BtnEliminar
         ' 
-        BtnEliminar.Location = New Point(115, 303)
+        BtnEliminar.Location = New Point(179, 315)
         BtnEliminar.Name = "BtnEliminar"
         BtnEliminar.Size = New Size(75, 23)
         BtnEliminar.TabIndex = 2
@@ -73,25 +74,35 @@ Partial Class FrmPrincipal
         BtnSobrescribir.Text = "Sobrescribir"
         BtnSobrescribir.UseVisualStyleBackColor = True
         ' 
-        ' ListBox1
+        ' listaDatos
         ' 
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 15
-        ListBox1.Location = New Point(12, 120)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(282, 154)
-        ListBox1.TabIndex = 5
+        listaDatos.FormattingEnabled = True
+        listaDatos.ItemHeight = 15
+        listaDatos.Location = New Point(12, 120)
+        listaDatos.Name = "listaDatos"
+        listaDatos.Size = New Size(282, 154)
+        listaDatos.TabIndex = 5
+        ' 
+        ' lblTotalReg
+        ' 
+        lblTotalReg.AutoSize = True
+        lblTotalReg.Location = New Point(12, 277)
+        lblTotalReg.Name = "lblTotalReg"
+        lblTotalReg.Size = New Size(83, 15)
+        lblTotalReg.TabIndex = 6
+        lblTotalReg.Text = "Total Registros"
         ' 
         ' FrmPrincipal
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(311, 350)
-        Controls.Add(ListBox1)
+        Controls.Add(lblTotalReg)
+        Controls.Add(listaDatos)
         Controls.Add(BtnSobrescribir)
         Controls.Add(BtnAgregar)
         Controls.Add(BtnEliminar)
-        Controls.Add(TextBox1)
+        Controls.Add(tbxAgregarInfo)
         Controls.Add(BtnCrear)
         Name = "FrmPrincipal"
         Text = "Manejo de Archivos"
@@ -100,9 +111,10 @@ Partial Class FrmPrincipal
     End Sub
 
     Friend WithEvents BtnCrear As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents tbxAgregarInfo As TextBox
     Friend WithEvents BtnEliminar As Button
     Friend WithEvents BtnAgregar As Button
     Friend WithEvents BtnSobrescribir As Button
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents listaDatos As ListBox
+    Friend WithEvents lblTotalReg As Label
 End Class
