@@ -88,9 +88,9 @@ Partial Class FrmPrincipal
         lblTotalReg.AutoSize = True
         lblTotalReg.Location = New Point(12, 277)
         lblTotalReg.Name = "lblTotalReg"
-        lblTotalReg.Size = New Size(83, 15)
+        lblTotalReg.Size = New Size(12, 15)
         lblTotalReg.TabIndex = 6
-        lblTotalReg.Text = "Total Registros"
+        lblTotalReg.Text = "*"
         ' 
         ' FrmPrincipal
         ' 
