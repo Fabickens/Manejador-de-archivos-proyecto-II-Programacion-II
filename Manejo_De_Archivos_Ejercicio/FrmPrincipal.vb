@@ -18,6 +18,7 @@ Public Class FrmPrincipal
 
             Dim ultimoIndice As Integer = listaDatos.Items.Count - 1
             listaDatos.Items(ultimoIndice) = modificar
+            tbxAgregarInfo.Clear()
 
         End If
 
