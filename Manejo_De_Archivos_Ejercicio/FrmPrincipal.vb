@@ -23,5 +23,21 @@ Public Class FrmPrincipal
         End If
 
     End Sub
+
+    Private Sub BtnCrear_Click(sender As Object, e As EventArgs) Handles BtnCrear.Click
+        Dim nombreArchivo As String = InputBox("Ingrese el nombre del archivo de texto:", "Crear archivo de texto")
+        If Not String.IsNullOrEmpty(nombreArchivo) Then
+            nombreArchivo &= ".txt"
+
+            Dim rutaArchivo As String = "C:\Users\Fabián\Documents\Ruta Archivo" & nombreArchivo
+
+            Try
+                System.IO.File.Create(rutaArchivo).Close()
+                MessageBox.Show("Archivo de texto creado" & rutaArchivo, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Catch ex As Exception
+                MessageBox.Show("Error al crear el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
+    End Sub
 End Class
 
