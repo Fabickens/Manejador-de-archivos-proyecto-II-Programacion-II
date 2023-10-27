@@ -27,28 +27,19 @@ Public Class FrmPrincipal
     End Sub
 
     Private Sub BtnCrear_Click(sender As Object, e As EventArgs) Handles BtnCrear.Click
-        Dim nombreArchivo As String = InputBox("Ingrese el nombre del archivo de texto sin la extension txt:", "Crear archivo de texto")
-        If Not String.IsNullOrEmpty(nombreArchivo) Then
-            nombreArchivo &= ".txt"
-
+        Dim nombreArchivo As String = "Prueba.txt"
             Dim rutaArchivo As String = "C:\Users\Fabián\Documents\Ruta Archivo" & nombreArchivo
-
             Try
                 System.IO.File.Create(rutaArchivo).Close()
                 MessageBox.Show("Archivo de texto creado" & rutaArchivo, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Catch ex As Exception
                 MessageBox.Show("Error al crear el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
-        End If
     End Sub
 
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
-        Dim nombreArchivo As String = InputBox("Ingrese el nombre del archivo que desea eliminar sin la extension txt", "Eliminar archivo de texto")
-        If Not String.IsNullOrEmpty(nombreArchivo) Then
-            nombreArchivo &= ".txt"
-
+        Dim nombreArchivo As String = "Prueba.txt"
             Dim rutaArchivo As String = "C:\Users\Fabián\Documents\Ruta Archivo" & nombreArchivo
-
             Try
                 If File.Exists(rutaArchivo) Then
                     File.Delete(rutaArchivo)
@@ -59,7 +50,6 @@ Public Class FrmPrincipal
             Catch ex As Exception
                 MessageBox.Show("Error al eliminar el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
-        End If
     End Sub
 End Class
 
