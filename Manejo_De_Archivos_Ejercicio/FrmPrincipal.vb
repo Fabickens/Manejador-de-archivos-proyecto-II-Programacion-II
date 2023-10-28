@@ -31,17 +31,28 @@ Public Class FrmPrincipal
     End Sub
 
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
+
         Dim agregarInfo As String = tbxAgregarInfo.Text
         If agregarInfo <> "" Then
             swEscritor = New StreamWriter(rutaArchivo, True)
             swEscritor.WriteLine(agregarInfo)
             tbxAgregarInfo.Clear()
             swEscritor.Close()
-
         End If
+
     End Sub
 
     Private Sub BtnSobrescribir_Click(sender As Object, e As EventArgs) Handles BtnSobrescribir.Click
+
+        Dim modificar As String = tbxAgregarInfo.Text
+        If modificar <> "" Then
+            Dim registros As String() = File.ReadAllLines(rutaArchivo)
+            If registros.Length > 0 Then
+                registros(registros.Length - 1) = modificar
+                File.WriteAllLines(rutaArchivo, registros)
+            End If
+            tbxAgregarInfo.Clear()
+        End If
 
 
     End Sub
