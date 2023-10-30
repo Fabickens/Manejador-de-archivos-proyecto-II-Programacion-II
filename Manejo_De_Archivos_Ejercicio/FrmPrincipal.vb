@@ -25,6 +25,7 @@ Public Class FrmPrincipal
             Else
                 MessageBox.Show("El archivo es inexistente en la ubicacion especificada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
+            listaDatos.Items.Clear()
         Catch ex As Exception
             MessageBox.Show("Error al eliminar el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
