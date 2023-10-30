@@ -38,6 +38,8 @@ Public Class FrmPrincipal
             swEscritor.WriteLine(agregarInfo)
             tbxAgregarInfo.Clear()
             swEscritor.Close()
+
+            CargarDatosEnListBox()
         End If
 
     End Sub
@@ -52,9 +54,18 @@ Public Class FrmPrincipal
                 File.WriteAllLines(rutaArchivo, registros)
             End If
             tbxAgregarInfo.Clear()
+
+            CargarDatosEnListBox()
         End If
+    End Sub
 
+    Private Sub CargarDatosEnListBox()
 
+        If File.Exists(rutaArchivo) Then
+            Dim contenido As String() = File.ReadAllLines(rutaArchivo)
+            listaDatos.Items.Clear() ' Limpia el ListBox antes de agregar los datos
+            listaDatos.Items.AddRange(contenido)
+        End If
     End Sub
 
 End Class
