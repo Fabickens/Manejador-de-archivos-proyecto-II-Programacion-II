@@ -66,6 +66,9 @@ Public Class FrmPrincipal
             Dim contenido As String() = File.ReadAllLines(rutaArchivo)
             listaDatos.Items.Clear() ' Limpia el ListBox antes de agregar los datos
             listaDatos.Items.AddRange(contenido)
+            cantidad = listaDatos.Items.Count
+            lblTotalReg.Text = cantidad
+
         End If
     End Sub
 
