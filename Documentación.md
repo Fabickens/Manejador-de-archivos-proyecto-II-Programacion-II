@@ -84,7 +84,7 @@ Se realiza una comprobación como la anterior pero con el fin de que si el archi
 
 ## Mostrar Datos del Archivo Generado en una ListBox en el form principal.
 
-Este método valida inicialmente la existencia del archivo y en caso afirmativo leerá el mismo linea a linea y almacenará esta información en una lista, luego limpia la vista del listbox y añade la información almacenada en la lista creada a partir de lectura del archivo txt, a la ves dentro de este método con el uso de la propiedad Items.count se realiza una cuenta de registros de datos, aprovechando que el archivo ya fue leido y almacenado una vez y con esa información alimenta el contador que se mostrara en su respectivo Label.
+Este método valida inicialmente la existencia del archivo y en caso afirmativo leerá el mismo linea a linea y almacenará esta información en un arreglo, luego limpia la vista del listbox y añade la información almacenada en la lista creada a partir de lectura del archivo txt, a la ves dentro de este método con el uso de la propiedad Items.count se realiza una cuenta de registros de datos, aprovechando que el archivo ya fue leido y almacenado una vez y con esa información alimenta el contador que se mostrara en su respectivo Label.
 
 Private Sub CargarDatosEnListBox()
 
@@ -99,7 +99,7 @@ Private Sub CargarDatosEnListBox()
     End Sub
 
     ## Agregar Datos
-El proceso consiste en almacenar el contenido escrito en el text box en una variable, luego se valide que no sea un text box vacío y mediante la variable sw Escritor para almacenar la instancia del metodo StreamWriter permita a través de propiedades la escritura de un archico de texto previamente creado. luego de añadir la información limpia el text box y cierra el archivo, además aquí se llama el metodo CargaDatos que realiza conteo de registros ya leidos en este metodo y los muestra en un label.
+El proceso consiste en almacenar el contenido escrito en el text box en una variable, luego se valide que no sea un text box vacío y mediante la variable sw Escritor para almacenar la instancia del metodo StreamWriter permita a través de propiedades la escritura de un archivo de texto previamente creado. luego de añadir la información limpia el text box y cierra el archivo, además aquí se llama el metodo CargaDatos que realiza conteo de registros ya leidos en este metodo y los muestra en un label.
 
      Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
 
@@ -116,7 +116,7 @@ El proceso consiste en almacenar el contenido escrito en el text box en una vari
  End Sub
  
 ## Sobrescribir Datos
-Nuevamente se leen datos del text box (ingresados por el usuario), se almacenan en una variable, en la lista registros generada a partir de la lectura del archivo txt generado, cuenta sus espacios y se le resta uno para posicionarse en lo que sería su ultimo indice que contiene el registro reciente para sobrescribirlo o modificarlo, se realiza la sobrescritura del txt. y se llama al metodo para cargar datos actualizados a mostrar en list box del form principal.
+Nuevamente se leen datos del text box (ingresados por el usuario), se almacenan en una variable, luego en el arreglo registros generado a partir de la lectura del archivo txt creado, cuenta sus espacios y se le resta uno para posicionarse en lo que sería su ultimo indice que contiene el registro reciente para sobrescribirlo o modificarlo, se realiza la sobrescritura del txt. y se llama al metodo para cargar datos actualizados a mostrar en list box del form principal.
 
     vate Sub BtnSobrescribir_Click(sender As Object, e As EventArgs) Handles BtnSobrescribir.Click
 
