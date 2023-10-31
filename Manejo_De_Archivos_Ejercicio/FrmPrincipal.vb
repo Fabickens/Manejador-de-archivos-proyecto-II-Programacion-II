@@ -76,7 +76,7 @@ Public Class FrmPrincipal
             listaDatos.Items.Clear() ' Limpia el ListBox antes de agregar los datos
             listaDatos.Items.AddRange(contenido)
             cantidad = listaDatos.Items.Count
-            lblTotalReg.Text = cantidad
+            lblTotalReg.Text = "Total " & cantidad
 
         End If
     End Sub
