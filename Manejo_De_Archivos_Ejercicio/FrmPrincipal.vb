@@ -9,11 +9,16 @@ Public Class FrmPrincipal
     Private Sub BtnCrear_Click(sender As Object, e As EventArgs) Handles BtnCrear.Click
 
         Try
-            System.IO.File.Create(rutaArchivo).Close()
-            MessageBox.Show("Archivo de texto creado" & rutaArchivo, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            If Not System.IO.File.Exists(rutaArchivo) Then
+                System.IO.File.Create(rutaArchivo).Close()
+                MessageBox.Show("Archivo de texto creado" & rutaArchivo, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("El archivo ya existe en la ubicación especificada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
         Catch ex As Exception
             MessageBox.Show("Error al crear el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+            End Try
+
     End Sub
 
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
