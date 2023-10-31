@@ -33,7 +33,7 @@ Partial Class FrmPrincipal
         ' 
         ' BtnCrear
         ' 
-        BtnCrear.Location = New Point(59, 315)
+        BtnCrear.Location = New Point(44, 302)
         BtnCrear.Name = "BtnCrear"
         BtnCrear.Size = New Size(82, 23)
         BtnCrear.TabIndex = 0
@@ -49,7 +49,7 @@ Partial Class FrmPrincipal
         ' 
         ' BtnEliminar
         ' 
-        BtnEliminar.Location = New Point(179, 315)
+        BtnEliminar.Location = New Point(172, 302)
         BtnEliminar.Name = "BtnEliminar"
         BtnEliminar.Size = New Size(75, 23)
         BtnEliminar.TabIndex = 2
@@ -58,7 +58,7 @@ Partial Class FrmPrincipal
         ' 
         ' BtnAgregar
         ' 
-        BtnAgregar.Location = New Point(12, 69)
+        BtnAgregar.Location = New Point(44, 69)
         BtnAgregar.Name = "BtnAgregar"
         BtnAgregar.Size = New Size(75, 23)
         BtnAgregar.TabIndex = 3
@@ -67,7 +67,7 @@ Partial Class FrmPrincipal
         ' 
         ' BtnSobrescribir
         ' 
-        BtnSobrescribir.Location = New Point(104, 69)
+        BtnSobrescribir.Location = New Point(172, 69)
         BtnSobrescribir.Name = "BtnSobrescribir"
         BtnSobrescribir.Size = New Size(86, 23)
         BtnSobrescribir.TabIndex = 4
@@ -96,6 +96,7 @@ Partial Class FrmPrincipal
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ActiveCaption
         ClientSize = New Size(311, 350)
         Controls.Add(lblTotalReg)
         Controls.Add(listaDatos)

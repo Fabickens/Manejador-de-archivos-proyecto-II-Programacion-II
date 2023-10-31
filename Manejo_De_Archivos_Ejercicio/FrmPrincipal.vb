@@ -18,7 +18,7 @@ Public Class FrmPrincipal
             End If
         Catch ex As Exception
             MessageBox.Show("Error al crear el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End Try
+        End Try
 
     End Sub
 
