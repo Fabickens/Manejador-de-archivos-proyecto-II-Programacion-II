@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danie\\source\\repos\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
+      "projectUniqueName": "C:\\Users\\danie\\source\\repos\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
       "projectName": "Manejo_De_Archivos_Ejercicio",
-      "projectPath": "C:\\Users\\danie\\source\\repos\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
+      "projectPath": "C:\\Users\\danie\\source\\repos\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
       "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danie\\source\\repos\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio\\obj\\",
+      "outputPath": "C:\\Users\\danie\\source\\repos\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,7 +70,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
