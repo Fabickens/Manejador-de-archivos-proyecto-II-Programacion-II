@@ -3,22 +3,27 @@ Imports System.IO
 
 Public Class FrmPrincipal
     Dim cantidad As Integer = 0
-    Dim rutaArchivo As String = "D:\ArchivoPrueba.txt"
+    Dim rutaArchivo As String 
     Dim swEscritor As StreamWriter
     Dim srLector As StreamReader
 
     Private Sub BtnCrear_Click(sender As Object, e As EventArgs) Handles BtnCrearTxt.Click
-        'Metodo que genera un archivo txt en la ruta especifica, comprueba si el archivo no existe en el directorio y de ser así lo crea.
-        Try
-            If Not System.IO.File.Exists(rutaArchivo) Then
-                System.IO.File.Create(rutaArchivo).Close()
-                MessageBox.Show("Archivo de texto creado" & rutaArchivo, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Else
-                MessageBox.Show("El archivo ya existe en la ubicación especificada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End If
-        Catch ex As Exception
-            MessageBox.Show("Error al crear el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+        'Metodo que pregunta donde crear el archivo txt sobre el cual trabajamos.
+        Dim saveFileDialog As New SaveFileDialog
+        If saveFileDialog.ShowDialog() = DialogResult.OK Then
+            rutaArchivo = saveFileDialog.FileName
+
+            Try
+                If Not System.IO.File.Exists(rutaArchivo) Then
+                    System.IO.File.Create(rutaArchivo).Close()
+                    MessageBox.Show("Archivo de texto creado" & rutaArchivo, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    MessageBox.Show("El archivo ya existe en la ubicación especificada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+            Catch ex As Exception
+                MessageBox.Show("Error al crear el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
 
     End Sub
 
