@@ -10,7 +10,9 @@ Public Class FrmPrincipal
     Private Sub BtnCrear_Click(sender As Object, e As EventArgs) Handles BtnCrearTxt.Click
         'Metodo que pregunta donde crear el archivo txt sobre el cual trabajamos.
         Dim saveFileDialog As New SaveFileDialog
+        saveFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*"
         If saveFileDialog.ShowDialog() = DialogResult.OK Then
+
             rutaArchivo = saveFileDialog.FileName
 
             Try
