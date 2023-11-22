@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj": {}
+    "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj": {
+    "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
-        "projectName": "Manejo_De_Archivos_Ejercicio",
-        "projectPath": "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
+        "projectUniqueName": "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj",
+        "projectName": "Tutorial_Crud_Tx",
+        "projectPath": "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\obj\\",
         "projectStyle": "PackageReference",
