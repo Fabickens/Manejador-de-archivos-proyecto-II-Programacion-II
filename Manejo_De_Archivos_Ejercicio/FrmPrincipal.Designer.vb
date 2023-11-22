@@ -31,15 +31,15 @@ Partial Class FrmPrincipal
         lblTotalReg = New Label()
         Panel1 = New Panel()
         Label1 = New Label()
-        Panel2 = New Panel()
-        Label2 = New Label()
         Label3 = New Label()
+        Panel2 = New Panel()
+        Label7 = New Label()
+        TextBox1 = New TextBox()
+        Label6 = New Label()
+        Label5 = New Label()
+        Label2 = New Label()
         Panel3 = New Panel()
         Label4 = New Label()
-        Label5 = New Label()
-        Label6 = New Label()
-        TextBox1 = New TextBox()
-        Label7 = New Label()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -47,7 +47,7 @@ Partial Class FrmPrincipal
         ' 
         ' BtnCrear
         ' 
-        BtnCrear.Location = New Point(22, 43)
+        BtnCrear.Location = New Point(20, 30)
         BtnCrear.Name = "BtnCrear"
         BtnCrear.Size = New Size(82, 23)
         BtnCrear.TabIndex = 0
@@ -63,7 +63,7 @@ Partial Class FrmPrincipal
         ' 
         ' BtnEliminar
         ' 
-        BtnEliminar.Location = New Point(361, 43)
+        BtnEliminar.Location = New Point(355, 30)
         BtnEliminar.Name = "BtnEliminar"
         BtnEliminar.Size = New Size(75, 23)
         BtnEliminar.TabIndex = 2
@@ -72,7 +72,7 @@ Partial Class FrmPrincipal
         ' 
         ' BtnAgregar
         ' 
-        BtnAgregar.Location = New Point(133, 43)
+        BtnAgregar.Location = New Point(133, 30)
         BtnAgregar.Name = "BtnAgregar"
         BtnAgregar.Size = New Size(75, 23)
         BtnAgregar.TabIndex = 3
@@ -81,7 +81,7 @@ Partial Class FrmPrincipal
         ' 
         ' BtnSobrescribir
         ' 
-        BtnSobrescribir.Location = New Point(239, 43)
+        BtnSobrescribir.Location = New Point(239, 30)
         BtnSobrescribir.Name = "BtnSobrescribir"
         BtnSobrescribir.Size = New Size(86, 23)
         BtnSobrescribir.TabIndex = 4
@@ -114,9 +114,9 @@ Partial Class FrmPrincipal
         Panel1.Controls.Add(BtnAgregar)
         Panel1.Controls.Add(BtnEliminar)
         Panel1.Controls.Add(BtnSobrescribir)
-        Panel1.Location = New Point(31, 24)
+        Panel1.Location = New Point(37, 12)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(459, 98)
+        Panel1.Size = New Size(439, 75)
         Panel1.TabIndex = 7
         ' 
         ' Label1
@@ -128,6 +128,16 @@ Partial Class FrmPrincipal
         Label1.TabIndex = 0
         Label1.Text = "Operaciones"
         ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Location = New Point(18, -3)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(84, 17)
+        Label3.TabIndex = 5
+        Label3.Text = "Operaciones"
+        ' 
         ' Panel2
         ' 
         Panel2.Controls.Add(Label7)
@@ -136,74 +146,10 @@ Partial Class FrmPrincipal
         Panel2.Controls.Add(Label5)
         Panel2.Controls.Add(tbxAgregarInfo)
         Panel2.Controls.Add(lblTotalReg)
-        Panel2.Location = New Point(37, 144)
+        Panel2.Location = New Point(37, 110)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(582, 85)
         Panel2.TabIndex = 8
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(63, 135)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(114, 17)
-        Label2.TabIndex = 0
-        Label2.Text = "Datos del Cliente"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label3.Location = New Point(20, 0)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(84, 17)
-        Label3.TabIndex = 5
-        Label3.Text = "Operaciones"
-        ' 
-        ' Panel3
-        ' 
-        Panel3.Controls.Add(Label4)
-        Panel3.Controls.Add(listaDatos)
-        Panel3.Location = New Point(39, 262)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(413, 145)
-        Panel3.TabIndex = 9
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label4.Location = New Point(31, 3)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(69, 17)
-        Label4.TabIndex = 0
-        Label4.Text = "Resultado"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(16, 32)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(56, 15)
-        Label5.TabIndex = 2
-        Label5.Text = "Nombres"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(233, 30)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(56, 15)
-        Label6.TabIndex = 3
-        Label6.Text = "Apellidos"
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(315, 24)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(100, 23)
-        TextBox1.TabIndex = 4
         ' 
         ' Label7
         ' 
@@ -214,12 +160,66 @@ Partial Class FrmPrincipal
         Label7.TabIndex = 7
         Label7.Text = "Total Registros"
         ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(315, 24)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(100, 23)
+        TextBox1.TabIndex = 4
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Location = New Point(233, 30)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(56, 15)
+        Label6.TabIndex = 3
+        Label6.Text = "Apellidos"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(16, 32)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(56, 15)
+        Label5.TabIndex = 2
+        Label5.Text = "Nombres"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.Location = New Point(57, 99)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(114, 17)
+        Label2.TabIndex = 0
+        Label2.Text = "Datos del Cliente"
+        ' 
+        ' Panel3
+        ' 
+        Panel3.Controls.Add(listaDatos)
+        Panel3.Location = New Point(37, 222)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(413, 167)
+        Panel3.TabIndex = 9
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.Location = New Point(57, 212)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(69, 17)
+        Label4.TabIndex = 0
+        Label4.Text = "Resultado"
+        ' 
         ' FrmPrincipal
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaption
         ClientSize = New Size(654, 419)
+        Controls.Add(Label4)
         Controls.Add(Panel3)
         Controls.Add(Label2)
         Controls.Add(Panel2)
@@ -231,7 +231,6 @@ Partial Class FrmPrincipal
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         Panel3.ResumeLayout(False)
-        Panel3.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
