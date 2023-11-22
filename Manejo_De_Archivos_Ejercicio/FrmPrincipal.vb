@@ -7,7 +7,7 @@ Public Class FrmPrincipal
     Dim swEscritor As StreamWriter
     Dim srLector As StreamReader
 
-    Private Sub BtnCrear_Click(sender As Object, e As EventArgs) Handles BtnCrear.Click
+    Private Sub BtnCrear_Click(sender As Object, e As EventArgs) Handles BtnCrearTxt.Click
         'Metodo que genera un archivo txt en la ruta especifica, comprueba si el archivo no existe en el directorio y de ser así lo crea.
         Try
             If Not System.IO.File.Exists(rutaArchivo) Then
@@ -31,20 +31,20 @@ Public Class FrmPrincipal
             Else
                 MessageBox.Show("El archivo es inexistente en la ubicacion especificada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
-            listaDatos.Items.Clear()
+            ListBoxClientes.Items.Clear()
         Catch ex As Exception
             MessageBox.Show("Error al eliminar el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
+    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnGuardartodo.Click
         'Metodo que lee datos ingresados por usuario en text box lo almacena en una variable, lo escribe en el archivo txt
         'Llama al metodo Cargar Datos en ListBox para mostrar en el form principal.
-        Dim agregarInfo As String = tbxAgregarInfo.Text
+        Dim agregarInfo As String = TxtNombres.Text
         If agregarInfo <> "" Then
             swEscritor = New StreamWriter(rutaArchivo, True)
             swEscritor.WriteLine(agregarInfo)
-            tbxAgregarInfo.Clear()
+            TxtNombres.Clear()
             swEscritor.Close()
 
             CargarDatosEnListBox()
@@ -55,14 +55,14 @@ Public Class FrmPrincipal
     Private Sub BtnSobrescribir_Click(sender As Object, e As EventArgs) Handles BtnSobrescribir.Click
         'Metodo que lee datos del text box ingresados por usuario, los almacena en una variable, lee el archivo txt si contiene datos los almacena en
         'un arreglo, cuenta sus espacios e indices luego reemplaza el ultimo por los datos actualizados (sobrescritura)
-        Dim modificar As String = tbxAgregarInfo.Text
+        Dim modificar As String = TxtNombres.Text
         If modificar <> "" Then
             Dim registros As String() = File.ReadAllLines(rutaArchivo)
             If registros.Length > 0 Then
                 registros(registros.Length - 1) = modificar
                 File.WriteAllLines(rutaArchivo, registros)
             End If
-            tbxAgregarInfo.Clear()
+            TxtNombres.Clear()
 
             CargarDatosEnListBox()
         End If
@@ -73,9 +73,9 @@ Public Class FrmPrincipal
         'en un label.
         If File.Exists(rutaArchivo) Then
             Dim contenido As String() = File.ReadAllLines(rutaArchivo)
-            listaDatos.Items.Clear() ' Limpia el ListBox antes de agregar los datos
-            listaDatos.Items.AddRange(contenido)
-            cantidad = listaDatos.Items.Count
+            ListBoxClientes.Items.Clear() ' Limpia el ListBox antes de agregar los datos
+            ListBoxClientes.Items.AddRange(contenido)
+            cantidad = ListBoxClientes.Items.Count
             lblTotalReg.Text = "Total " & cantidad
 
         End If
