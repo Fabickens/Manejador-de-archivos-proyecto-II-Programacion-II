@@ -47,9 +47,9 @@ Partial Class FrmPrincipal
         ' 
         ' BtnCrearTxt
         ' 
-        BtnCrearTxt.Location = New Point(20, 30)
+        BtnCrearTxt.Location = New Point(37, 30)
         BtnCrearTxt.Name = "BtnCrearTxt"
-        BtnCrearTxt.Size = New Size(82, 23)
+        BtnCrearTxt.Size = New Size(52, 23)
         BtnCrearTxt.TabIndex = 0
         BtnCrearTxt.Text = "Crear"
         BtnCrearTxt.UseVisualStyleBackColor = True
@@ -64,16 +64,16 @@ Partial Class FrmPrincipal
         ' BtnEliminar
         ' 
         BtnEliminar.BackColor = SystemColors.ButtonFace
-        BtnEliminar.Location = New Point(355, 30)
+        BtnEliminar.Location = New Point(301, 25)
         BtnEliminar.Name = "BtnEliminar"
-        BtnEliminar.Size = New Size(75, 23)
+        BtnEliminar.Size = New Size(65, 32)
         BtnEliminar.TabIndex = 2
         BtnEliminar.Text = "Eliminar "
         BtnEliminar.UseVisualStyleBackColor = False
         ' 
         ' BtnGuardartodo
         ' 
-        BtnGuardartodo.Location = New Point(243, 20)
+        BtnGuardartodo.Location = New Point(204, 20)
         BtnGuardartodo.Name = "BtnGuardartodo"
         BtnGuardartodo.Size = New Size(75, 42)
         BtnGuardartodo.TabIndex = 3
@@ -82,7 +82,7 @@ Partial Class FrmPrincipal
         ' 
         ' BtnSobrescribir
         ' 
-        BtnSobrescribir.Location = New Point(139, 20)
+        BtnSobrescribir.Location = New Point(116, 20)
         BtnSobrescribir.Name = "BtnSobrescribir"
         BtnSobrescribir.Size = New Size(63, 42)
         BtnSobrescribir.TabIndex = 4
@@ -117,7 +117,7 @@ Partial Class FrmPrincipal
         Panel1.Controls.Add(BtnSobrescribir)
         Panel1.Location = New Point(37, 12)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(439, 75)
+        Panel1.Size = New Size(383, 75)
         Panel1.TabIndex = 7
         ' 
         ' Label1
@@ -226,7 +226,7 @@ Partial Class FrmPrincipal
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Name = "FrmPrincipal"
-        Text = "Manejo de Archivos"
+        Text = " "
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         Panel2.ResumeLayout(False)

@@ -37,14 +37,15 @@ Public Class FrmPrincipal
         End Try
     End Sub
 
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnGuardartodo.Click
+    Private Sub BtnGuardartodo_Click(sender As Object, e As EventArgs) Handles BtnGuardartodo.Click
         'Metodo que lee datos ingresados por usuario en text box lo almacena en una variable, lo escribe en el archivo txt
         'Llama al metodo Cargar Datos en ListBox para mostrar en el form principal.
-        Dim agregarInfo As String = TxtNombres.Text
+        Dim agregarInfo As String = TxtNombres.Text & "," & TxtApellidos.Text
         If agregarInfo <> "" Then
             swEscritor = New StreamWriter(rutaArchivo, True)
             swEscritor.WriteLine(agregarInfo)
             TxtNombres.Clear()
+            TxtApellidos.Clear()
             swEscritor.Close()
 
             CargarDatosEnListBox()
@@ -55,7 +56,7 @@ Public Class FrmPrincipal
     Private Sub BtnSobrescribir_Click(sender As Object, e As EventArgs) Handles BtnSobrescribir.Click
         'Metodo que lee datos del text box ingresados por usuario, los almacena en una variable, lee el archivo txt si contiene datos los almacena en
         'un arreglo, cuenta sus espacios e indices luego reemplaza el ultimo por los datos actualizados (sobrescritura)
-        Dim modificar As String = TxtNombres.Text
+        Dim modificar As String = TxtNombres.Text & "," & TxtApellidos.Text
         If modificar <> "" Then
             Dim registros As String() = File.ReadAllLines(rutaArchivo)
             If registros.Length > 0 Then
@@ -63,7 +64,7 @@ Public Class FrmPrincipal
                 File.WriteAllLines(rutaArchivo, registros)
             End If
             TxtNombres.Clear()
-
+            TxtApellidos.Clear()
             CargarDatosEnListBox()
         End If
     End Sub
@@ -81,8 +82,6 @@ Public Class FrmPrincipal
         End If
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
-    End Sub
 End Class
 
