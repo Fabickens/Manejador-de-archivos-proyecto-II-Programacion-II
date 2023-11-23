@@ -22,19 +22,19 @@ Partial Class FrmPrincipal
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        BtnCrear = New Button()
-        tbxAgregarInfo = New TextBox()
+        BtnCrearTxt = New Button()
+        TxtNombres = New TextBox()
         BtnEliminar = New Button()
-        BtnAgregar = New Button()
+        BtnGuardartodo = New Button()
         BtnSobrescribir = New Button()
-        listaDatos = New ListBox()
+        ListBoxClientes = New ListBox()
         lblTotalReg = New Label()
         Panel1 = New Panel()
         Label1 = New Label()
         Label3 = New Label()
         Panel2 = New Panel()
         Label7 = New Label()
-        TextBox1 = New TextBox()
+        TxtApellidos = New TextBox()
         Label6 = New Label()
         Label5 = New Label()
         Label2 = New Label()
@@ -45,57 +45,58 @@ Partial Class FrmPrincipal
         Panel3.SuspendLayout()
         SuspendLayout()
         ' 
-        ' BtnCrear
+        ' BtnCrearTxt
         ' 
-        BtnCrear.Location = New Point(20, 30)
-        BtnCrear.Name = "BtnCrear"
-        BtnCrear.Size = New Size(82, 23)
-        BtnCrear.TabIndex = 0
-        BtnCrear.Text = "Crear txt"
-        BtnCrear.UseVisualStyleBackColor = True
+        BtnCrearTxt.Location = New Point(37, 30)
+        BtnCrearTxt.Name = "BtnCrearTxt"
+        BtnCrearTxt.Size = New Size(52, 23)
+        BtnCrearTxt.TabIndex = 0
+        BtnCrearTxt.Text = "Crear"
+        BtnCrearTxt.UseVisualStyleBackColor = True
         ' 
-        ' tbxAgregarInfo
+        ' TxtNombres
         ' 
-        tbxAgregarInfo.Location = New Point(87, 24)
-        tbxAgregarInfo.Name = "tbxAgregarInfo"
-        tbxAgregarInfo.Size = New Size(115, 23)
-        tbxAgregarInfo.TabIndex = 1
+        TxtNombres.Location = New Point(87, 24)
+        TxtNombres.Name = "TxtNombres"
+        TxtNombres.Size = New Size(115, 23)
+        TxtNombres.TabIndex = 1
         ' 
         ' BtnEliminar
         ' 
-        BtnEliminar.Location = New Point(355, 30)
+        BtnEliminar.BackColor = SystemColors.ButtonFace
+        BtnEliminar.Location = New Point(301, 25)
         BtnEliminar.Name = "BtnEliminar"
-        BtnEliminar.Size = New Size(75, 23)
+        BtnEliminar.Size = New Size(65, 32)
         BtnEliminar.TabIndex = 2
-        BtnEliminar.Text = "Eliminar txt"
-        BtnEliminar.UseVisualStyleBackColor = True
+        BtnEliminar.Text = "Eliminar "
+        BtnEliminar.UseVisualStyleBackColor = False
         ' 
-        ' BtnAgregar
+        ' BtnGuardartodo
         ' 
-        BtnAgregar.Location = New Point(133, 30)
-        BtnAgregar.Name = "BtnAgregar"
-        BtnAgregar.Size = New Size(75, 23)
-        BtnAgregar.TabIndex = 3
-        BtnAgregar.Text = "Agregar"
-        BtnAgregar.UseVisualStyleBackColor = True
+        BtnGuardartodo.Location = New Point(204, 20)
+        BtnGuardartodo.Name = "BtnGuardartodo"
+        BtnGuardartodo.Size = New Size(75, 42)
+        BtnGuardartodo.TabIndex = 3
+        BtnGuardartodo.Text = "Guardar Todo"
+        BtnGuardartodo.UseVisualStyleBackColor = True
         ' 
         ' BtnSobrescribir
         ' 
-        BtnSobrescribir.Location = New Point(239, 30)
+        BtnSobrescribir.Location = New Point(116, 20)
         BtnSobrescribir.Name = "BtnSobrescribir"
-        BtnSobrescribir.Size = New Size(86, 23)
+        BtnSobrescribir.Size = New Size(63, 42)
         BtnSobrescribir.TabIndex = 4
-        BtnSobrescribir.Text = "Sobrescribir"
+        BtnSobrescribir.Text = "Sobre Escribir"
         BtnSobrescribir.UseVisualStyleBackColor = True
         ' 
-        ' listaDatos
+        ' ListBoxClientes
         ' 
-        listaDatos.FormattingEnabled = True
-        listaDatos.ItemHeight = 15
-        listaDatos.Location = New Point(51, 23)
-        listaDatos.Name = "listaDatos"
-        listaDatos.Size = New Size(315, 109)
-        listaDatos.TabIndex = 5
+        ListBoxClientes.FormattingEnabled = True
+        ListBoxClientes.ItemHeight = 15
+        ListBoxClientes.Location = New Point(51, 23)
+        ListBoxClientes.Name = "ListBoxClientes"
+        ListBoxClientes.Size = New Size(315, 109)
+        ListBoxClientes.TabIndex = 5
         ' 
         ' lblTotalReg
         ' 
@@ -110,13 +111,13 @@ Partial Class FrmPrincipal
         ' 
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(Label3)
-        Panel1.Controls.Add(BtnCrear)
-        Panel1.Controls.Add(BtnAgregar)
+        Panel1.Controls.Add(BtnCrearTxt)
+        Panel1.Controls.Add(BtnGuardartodo)
         Panel1.Controls.Add(BtnEliminar)
         Panel1.Controls.Add(BtnSobrescribir)
         Panel1.Location = New Point(37, 12)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(439, 75)
+        Panel1.Size = New Size(383, 75)
         Panel1.TabIndex = 7
         ' 
         ' Label1
@@ -141,10 +142,10 @@ Partial Class FrmPrincipal
         ' Panel2
         ' 
         Panel2.Controls.Add(Label7)
-        Panel2.Controls.Add(TextBox1)
+        Panel2.Controls.Add(TxtApellidos)
         Panel2.Controls.Add(Label6)
         Panel2.Controls.Add(Label5)
-        Panel2.Controls.Add(tbxAgregarInfo)
+        Panel2.Controls.Add(TxtNombres)
         Panel2.Controls.Add(lblTotalReg)
         Panel2.Location = New Point(37, 110)
         Panel2.Name = "Panel2"
@@ -160,12 +161,12 @@ Partial Class FrmPrincipal
         Label7.TabIndex = 7
         Label7.Text = "Total Registros"
         ' 
-        ' TextBox1
+        ' TxtApellidos
         ' 
-        TextBox1.Location = New Point(315, 24)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(100, 23)
-        TextBox1.TabIndex = 4
+        TxtApellidos.Location = New Point(315, 24)
+        TxtApellidos.Name = "TxtApellidos"
+        TxtApellidos.Size = New Size(100, 23)
+        TxtApellidos.TabIndex = 4
         ' 
         ' Label6
         ' 
@@ -197,7 +198,7 @@ Partial Class FrmPrincipal
         ' 
         ' Panel3
         ' 
-        Panel3.Controls.Add(listaDatos)
+        Panel3.Controls.Add(ListBoxClientes)
         Panel3.Location = New Point(37, 222)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(413, 167)
@@ -225,7 +226,7 @@ Partial Class FrmPrincipal
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Name = "FrmPrincipal"
-        Text = "Manejo de Archivos"
+        Text = " "
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         Panel2.ResumeLayout(False)
@@ -235,12 +236,12 @@ Partial Class FrmPrincipal
         PerformLayout()
     End Sub
 
-    Friend WithEvents BtnCrear As Button
-    Friend WithEvents tbxAgregarInfo As TextBox
+    Friend WithEvents BtnCrearTxt As Button
+    Friend WithEvents TxtNombres As TextBox
     Friend WithEvents BtnEliminar As Button
-    Friend WithEvents BtnAgregar As Button
+    Friend WithEvents BtnGuardartodo As Button
     Friend WithEvents BtnSobrescribir As Button
-    Friend WithEvents listaDatos As ListBox
+    Friend WithEvents ListBoxClientes As ListBox
     Friend WithEvents lblTotalReg As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
@@ -252,5 +253,5 @@ Partial Class FrmPrincipal
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtApellidos As TextBox
 End Class
