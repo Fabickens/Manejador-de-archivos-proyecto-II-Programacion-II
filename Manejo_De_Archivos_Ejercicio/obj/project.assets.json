@@ -14,19 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
       "projectName": "Manejo_De_Archivos_Ejercicio",
       "projectPath": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
       "packagesPath": "C:\\Users\\Fabián\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\danie\\source\\repos\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
-      "projectName": "Manejo_De_Archivos_Ejercicio",
-      "projectPath": "C:\\Users\\danie\\source\\repos\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
-      "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danie\\source\\repos\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\obj\\",
->>>>>>> 1dce0897e2644e06938205c974793a53b99e172c
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,12 +69,16 @@
             "privateAssets": "none"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
->>>>>>> 1dce0897e2644e06938205c974793a53b99e172c
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

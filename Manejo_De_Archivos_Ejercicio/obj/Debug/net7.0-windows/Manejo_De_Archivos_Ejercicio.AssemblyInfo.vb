@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Manejo_De_Archivos_Ejercicio"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c1c78f289084d95482d453bb099244e46cd8e39"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Manejo_De_Archivos_Ejercicio"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Manejo_De_Archivos_Ejercicio"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

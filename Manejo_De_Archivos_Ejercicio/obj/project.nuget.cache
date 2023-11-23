@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "egnUdPIRw8MBweayY8YbPu+3CTyiFxXjRtAIV2ELGFOKoVsNcATAtrmqSY3X+Jxufc0O6EoUFsCL/LACWvifRg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
-=======
-  "dgSpecHash": "OcHhYIre1uQL7uqXavretK7O4Iy9lf3KDFhyBHkTsnGwMtsu/w2TB0UOb/rp7Uunvhtk3ZXkPQIu+JFnh/m1DQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\danie\\source\\repos\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
->>>>>>> 1dce0897e2644e06938205c974793a53b99e172c
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
