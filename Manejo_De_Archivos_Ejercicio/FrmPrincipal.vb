@@ -3,7 +3,7 @@ Imports System.IO
 
 Public Class FrmPrincipal
     Dim cantidad As Integer = 0
-    Dim rutaArchivo As String 
+    Dim rutaArchivo As String
     Dim swEscritor As StreamWriter
     Dim srLector As StreamReader
 
@@ -14,7 +14,9 @@ Public Class FrmPrincipal
         If saveFileDialog.ShowDialog() = DialogResult.OK Then
 
             rutaArchivo = saveFileDialog.FileName
-
+            BtnEliminar.Enabled = True
+            BtnSobrescribir.Enabled = True
+            BtnGuardartodo.Enabled = True
             Try
                 If Not System.IO.File.Exists(rutaArchivo) Then
                     System.IO.File.Create(rutaArchivo).Close()
@@ -31,8 +33,10 @@ Public Class FrmPrincipal
 
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
         'Metodo que comprueba la existencia del archivo a eliminar en el directorio.
+
         Try
             If File.Exists(rutaArchivo) Then
+
                 File.Delete(rutaArchivo)
                 MessageBox.Show("Archivo de texto eliminado.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
@@ -89,6 +93,10 @@ Public Class FrmPrincipal
         End If
     End Sub
 
-
+    Private Sub FrmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        BtnEliminar.Enabled = False
+        BtnSobrescribir.Enabled = False
+        BtnGuardartodo.Enabled = False
+    End Sub
 End Class
 
