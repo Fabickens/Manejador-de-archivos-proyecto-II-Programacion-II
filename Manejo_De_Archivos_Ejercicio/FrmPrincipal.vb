@@ -43,6 +43,10 @@ Public Class FrmPrincipal
                 MessageBox.Show("El archivo es inexistente en la ubicacion especificada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
             ListBoxClientes.Items.Clear()
+            lblTotalReg.Text = "Total " & "0"
+            BtnEliminar.Enabled = False
+            BtnSobrescribir.Enabled = False
+            BtnGuardartodo.Enabled = False
         Catch ex As Exception
             MessageBox.Show("Error al eliminar el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
