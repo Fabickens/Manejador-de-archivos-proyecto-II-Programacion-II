@@ -102,5 +102,35 @@ Public Class FrmPrincipal
         BtnSobrescribir.Enabled = False
         BtnGuardartodo.Enabled = False
     End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+        Dim borderRectangle As Rectangle = Panel1.ClientRectangle
+
+        'Disminuye el tamaño del rectángulo 
+        borderRectangle.Inflate(-1, -1)
+
+        'Dibuja el borde utilizando un color personalizado
+        ControlPaint.DrawBorder(e.Graphics, borderRectangle, Color.White, ButtonBorderStyle.Solid)
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+        Dim borderRectangle As Rectangle = Panel1.ClientRectangle
+
+        'Extender el borde hacia la derecha 
+        borderRectangle.Width += 180
+
+
+        ControlPaint.DrawBorder(e.Graphics, borderRectangle, Color.White, ButtonBorderStyle.Solid)
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+        Dim borderRectangle As Rectangle = Panel1.ClientRectangle
+
+        'Extender el borde hacia abajo y a la derecha
+        borderRectangle.Height += 130
+        borderRectangle.Width += 200
+
+        ControlPaint.DrawBorder(e.Graphics, borderRectangle, Color.White, ButtonBorderStyle.Solid)
+    End Sub
 End Class
 
