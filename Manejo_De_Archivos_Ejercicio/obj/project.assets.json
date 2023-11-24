@@ -14,19 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
-      "projectName": "Manejo_De_Archivos_Ejercicio",
-      "projectPath": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
+      "projectUniqueName": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj",
+      "projectName": "Tutorial_Crud_Tx",
+      "projectPath": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj",
       "packagesPath": "C:\\Users\\Fabián\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj",
-      "projectName": "Tutorial_Crud_Tx",
-      "projectPath": "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj",
-      "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\obj\\",
->>>>>>> 5497b17659cebb35007427c02bc10e848dcf781e
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

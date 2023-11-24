@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "egnUdPIRw8MBweayY8YbPu+3CTyiFxXjRtAIV2ELGFOKoVsNcATAtrmqSY3X+Jxufc0O6EoUFsCL/LACWvifRg==",
+  "dgSpecHash": "cOHhVIWylwefbtuJbz2XwsUNBFncWid2gu64m8wQjiiSPVRaxOKeJTKDXnNXGvOmurbqwh2Hb/otDtg5zGrjsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Manejo_De_Archivos_Ejercicio.vbproj",
-=======
-  "dgSpecHash": "8NksjvV+4PiFbPG/qzfIKll0AmpkbFMpQ8niOL3zwFcFYrIjQyVg1TX2GirO94VD4P2SE4rqCFel1Fay2oxjQg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj",
->>>>>>> 5497b17659cebb35007427c02bc10e848dcf781e
+  "projectFilePath": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj",
   "expectedPackageFiles": [],
   "logs": [
     {
