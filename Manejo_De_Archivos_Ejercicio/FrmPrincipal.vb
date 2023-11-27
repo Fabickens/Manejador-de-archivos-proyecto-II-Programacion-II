@@ -7,6 +7,7 @@ Public Class FrmPrincipal
     Dim swEscritor As StreamWriter
     Dim srLector As StreamReader
 
+
     Private Sub BtnCrear_Click(sender As Object, e As EventArgs) Handles BtnCrearTxt.Click
         'Metodo que pregunta donde crear el archivo txt sobre el cual trabajamos.
         Dim saveFileDialog As New SaveFileDialog
