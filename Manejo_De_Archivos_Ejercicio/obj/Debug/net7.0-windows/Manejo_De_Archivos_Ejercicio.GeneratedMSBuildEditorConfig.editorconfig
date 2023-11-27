@@ -14,4 +14,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Manejo_De_Archivos_Ejercicio
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\Fabián\Desktop\Manejador-de-archivos-proyecto-II-Programacion-II\Manejo_De_Archivos_Ejercicio\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+=======
 build_property.ProjectDir = C:\Users\danie\source\repos\Tutorial_Crud_Tx\Manejo_De_Archivos_Ejercicio\
+>>>>>>> 5497b17659cebb35007427c02bc10e848dcf781e

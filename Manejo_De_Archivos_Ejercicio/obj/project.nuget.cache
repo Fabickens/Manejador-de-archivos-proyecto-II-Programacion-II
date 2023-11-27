@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "8NksjvV+4PiFbPG/qzfIKll0AmpkbFMpQ8niOL3zwFcFYrIjQyVg1TX2GirO94VD4P2SE4rqCFel1Fay2oxjQg==",
+  "dgSpecHash": "cOHhVIWylwefbtuJbz2XwsUNBFncWid2gu64m8wQjiiSPVRaxOKeJTKDXnNXGvOmurbqwh2Hb/otDtg5zGrjsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\source\\repos\\Tutorial_Crud_Tx\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj",
+  "projectFilePath": "C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\Tutorial_Crud_Tx.vbproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Fabián\\Desktop\\Manejador-de-archivos-proyecto-II-Programacion-II\\Manejo_De_Archivos_Ejercicio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
