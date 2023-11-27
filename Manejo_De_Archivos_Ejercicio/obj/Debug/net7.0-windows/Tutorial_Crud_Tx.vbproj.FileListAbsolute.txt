@@ -32,3 +32,4 @@ C:\Users\Fabián\Desktop\Manejador-de-archivos-proyecto-II-Programacion-II\Manej
 C:\Users\Fabián\Desktop\Manejador-de-archivos-proyecto-II-Programacion-II\Manejo_De_Archivos_Ejercicio\obj\Debug\net7.0-windows\Tutorial_Crud_Tx.genruntimeconfig.cache
 C:\Users\Fabián\Desktop\Manejador-de-archivos-proyecto-II-Programacion-II\Manejo_De_Archivos_Ejercicio\obj\Debug\net7.0-windows\ref\Tutorial_Crud_Tx.dll
 C:\Users\Fabián\Desktop\Manejador-de-archivos-proyecto-II-Programacion-II\Manejo_De_Archivos_Ejercicio\obj\Debug\net7.0-windows\Tutorial_Crud_Tx.Resources.resources
+C:\Users\danie\source\repos\Tutorial_Crud_Tx\Manejo_De_Archivos_Ejercicio\obj\Debug\net7.0-windows\Tutorial_Crud_Tx.Resources.resources

@@ -10,26 +10,26 @@ Public Class FrmPrincipal
 
     Private Sub BtnCrear_Click(sender As Object, e As EventArgs) Handles BtnCrearTxt.Click
         'Metodo que pregunta donde crear el archivo txt sobre el cual trabajamos.
-        Dim saveFileDialog As New SaveFileDialog
-        saveFileDialog.Filter = "Text files (*.txt)|*.txt"
-        If saveFileDialog.ShowDialog() = DialogResult.OK Then
+        Using saveFileDialog As New SaveFileDialog
+            saveFileDialog.Filter = "Text files (*.txt)|*.txt"
+            If saveFileDialog.ShowDialog() = DialogResult.OK Then
 
-            rutaArchivo = saveFileDialog.FileName
-            BtnEliminar.Enabled = True
-            BtnSobrescribir.Enabled = True
-            BtnGuardartodo.Enabled = True
-            Try
-                If Not System.IO.File.Exists(rutaArchivo) Then
-                    System.IO.File.Create(rutaArchivo).Close()
-                    MessageBox.Show("Archivo de texto creado" & rutaArchivo, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Else
-                    MessageBox.Show("El archivo ya existe en la ubicación especificada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                End If
-            Catch ex As Exception
-                MessageBox.Show("Error al crear el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End Try
-        End If
-
+                rutaArchivo = saveFileDialog.FileName
+                BtnEliminar.Enabled = True
+                BtnSobrescribir.Enabled = True
+                BtnGuardartodo.Enabled = True
+                Try
+                    If Not System.IO.File.Exists(rutaArchivo) Then
+                        System.IO.File.Create(rutaArchivo).Close()
+                        MessageBox.Show("Archivo de texto creado" & rutaArchivo, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    Else
+                        MessageBox.Show("El archivo ya existe en la ubicación especificada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    End If
+                Catch ex As Exception
+                    MessageBox.Show("Error al crear el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End Try
+            End If
+        End Using
     End Sub
 
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
